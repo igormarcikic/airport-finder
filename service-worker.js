@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/airdport-finer/precache-manifest.a66c0cbc767a14dddb610820fbc34a10.js"
+  "/airdport-finer/precache-manifest.4914881652206764990ec6f072845718.js"
 );
 
 self.addEventListener('message', (event) => {
