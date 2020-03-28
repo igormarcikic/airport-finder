@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './layout/Navigation';
+import ByRadiusHome from './AirportByRadius/ByRadiusHome';
+import ByNameHome from './AirportByName/ByNameHome';
+import styles from './App.module.css';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Provider from './context/Context';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Provider>
+        <Router>
+            <Navigation>
+              <Switch>
+                  <Route 
+                    exact
+                    path="/" 
+                    component={ByRadiusHome}
+                  />
+                  <Route 
+                    exact
+                    path="/byname" 
+                    component={ByNameHome}
+                  />
+              </Switch>
+            </Navigation>
+        </Router>
+      </Provider>
     </div>
   );
 }
