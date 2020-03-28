@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/airport-finder/precache-manifest.d67c2160964fb87d82867656619d0d45.js"
+  "/airport-finder/precache-manifest.03b585a536f18f999f7095f98c725e40.js"
 );
 
 self.addEventListener('message', (event) => {
