@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className={styles.App}>
       <Provider>
-        <Router>
+        <Router basename="/airport-finder">
             <Navigation>
               <Switch>
                   <Route 
